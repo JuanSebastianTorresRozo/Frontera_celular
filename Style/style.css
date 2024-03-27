@@ -1,0 +1,86 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #3F7C85;
+    width: 100%;
+    padding: 10px 20px; /* Ajusta el relleno superior e inferior */
+    box-sizing: border-box; /* Incluir el relleno en el ancho total */
+}
+
+header ul {
+    list-style: none; /* Eliminar los puntos de viñeta de la lista */
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    display: inline; /* Para que los elementos de la lista aparezcan en línea */
+    margin-right: 15px;
+}
+
+header ul li:first-child {
+    margin-left: auto; /* Mueve el primer elemento del menú a la derecha */
+}
+
+header ul li a {
+    text-decoration: none;
+    color: black; /* Cambiar el color del texto del enlace */
+}
+
+header ul li a:hover {
+    color: blue;
+}
+
+#pagina_principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100% - 50px); /* Resta el alto del encabezado */
+    background: linear-gradient(beige, white);
+    padding: 20px; /* Ajusta el relleno del contenido */
+    box-sizing: border-box; /* Incluir el relleno en el alto total */
+}
+#menulateral{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px; /* Ancho del menú lateral */
+    background-color: #747E7E; /* Color de fondo del menú */
+    padding-top: 20px; 
+}
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sidebar img {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#sidebar ul li a {
+    color: #000; /* Cambiar el color del texto del enlace */
+    text-decoration: none; /* Quitar el subrayado predeterminado */
+}
+
+#sidebar ul li a:hover {
+    color: #555; /* Cambiar el color del texto cuando el cursor está sobre él */
+}
