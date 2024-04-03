@@ -3,42 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Style/style.css" type="text/css">
+    <link rel="stylesheet" href="/Frontera_celular-main/Style/style.css" type="text/css">
+    <link rel="stylesheet" href="/Frontera_celular-main/Style/styleFormulario.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Ruda:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <Script src="/Frontera_celular-main/Js/Formulario.js"></Script>
+    <script src="/Frontera_celular-main/Js/principal.js"></script>
+    
     <title>CST</title>
 </head>
 <body>
     <header>
         <div class="d-lg-flex col-lg-3 justify-content-lg-end">
             <ul class="navbar-nav col-lg-6 justify-content-lg-center" id="ulMenu">
+                <li class="nav-item" id="notificaciones">
+                    <a class="nav-link" aria-current="page" href="#">
+                        <i class="fas fa-bell fa-lg fa-shake"></i>
+                    </a>
+                    <div id="panel-notificaciones" class="panel-notificaciones">
+                        <h3>Notificaciones</h3>
+                        <ul id="lista-notificaciones">
+                            <!-- Las notificaciones se agregarán aquí dinámicamente -->
+                        </ul>
+                    </div>
+                </li>
+                
+                               
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="/Index/registro.html">Registrate</a>
+                    <a class="nav-link" aria-current="page" href="/Frontera_celular-main/Index/registro.html">Registrate</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/Index/Inicio_sesion.html">Ingresa</a>
+                    <a class="nav-link" href="/Frontera_celular-main/Index/Inicio_sesion.html">Ingresa</a>
                 </li>
             </ul>
         </div>
     </header>
     <section id="menulateral">
         <div id="sidebar">
-            <a href="/Index/index.html">
-                <img src="/Imagenes/logo_frontera-01-e1669829308160.png" alt="Logo">
+            <a href="/Frontera_celular-main/Index/index.html">
+                <img src="/Frontera_celular-main/Imagenes/logo_frontera-01-e1669829308160.png" alt="Logo">
             </a>
+            
             <ul>
-                <li><a href="/Index/formulario.html">Creacion de tiquetes</a></li>
+                <li><a href="/Frontera_celular-main/Index/formulario.html">Creacion de tiquetes</a></li>
                 <li><a href="/Index/">Mis tiquetes</a></li>
-                <li>Tiquetes pendientes</li>
+                <li>Tiquetes pendientes</li> 
                 <li>Mis tiquetes asignados</li>
             </ul>
         </div>
     </section>
-
+   
     <section id="pagina_principal">
-        
+        <h1>FORMULARIO</h1>
         <div id="main-content">
-            <h1>FORMULARIO</h1>
-            
-            <form action="text">¿QUE PROBLEMA TIENE?</form>
+            <form id="form" class="form">
+                
+                <div id="div-Input-user">
+                    <label for="imagenProblema" id="labelImagen">Imagen</label>
+                    <input type="file" accept="image/*" class="form-control input-registro" id="imagenProblema" name="imagenProblema" onchange="mostrarVistaPrevia()">
+                </div>
+                
+                
+                <div id="vista-previa"></div>
+                
+                <div>
+                    <label for="" id="labelAsunto">Asunto</label>
+                    <textarea  id="Asunto" class="form-control input-registro" ></textarea>
+                </div>
+                <div>
+                  <label for="" id="labelDescripcion">Descripción</label>
+                  <textarea id="Descripcion" class="form-control input-registro" ></textarea>
+                </div>
+                <div>
+                  <label for="" id="labelPrioridad">Prioridad</label>
+                  <input type="number" class="form-control input-registro" id="prioridad" min="1" max="3">
+                </div>
+                <div>
+                  <label for="" id="labelEstado">Estado</label>
+                  <textarea id="Estado" class="form-control input-registro" ></textarea>
+                </div>
+                <div class="ParteAgente"> 
+                  <label for="" id="labelFechaAsignacion">Fecha de asignacion</label>
+                  <input type="date" class="form-control input-registro" id="FechaAsignacion" >
+                
+                  <label for="" id="labelFechaEjecucion">Fecha de ejecución</label>
+                  <input type="date" class="form-control input-registro" id="FechaEjecucion" >
+               
+                    <label for="" id="labelDiagnostico">Diagnostico</label>
+                    <textarea  id="Diagnostico" class="form-control input-registro"  ></textarea>
+                
+                    <label for="" id="labelSolucion">Solución</label>
+                    <textarea id="Solucion"class="form-control input-registro" ></textarea>
+                </div>
+
+                <div class="div-btn">
+                  <button type="submit" class="btn btn-secondary btn-enviar" id="botonEnviar">Enviar</button>
+                </div>
+              </form>
 
             
         </div>

@@ -30,30 +30,14 @@ form .input-registro{
     margin-left: 15px;
     height: 20px;
 }
-#nombre{
+#user{
     border-radius: 5px ;
     width: 190px;
     border-style:none;
     margin-left: 15px;
     height: 20px;
 }
-#apellido{
-    border-radius: 5px ;
-    height: 20px;
-    width: 190px;
-    border-style:none;
-    margin-left: 15px;
-    height: 20px;
-}
-#cargo{
-    border-radius: 5px ;
-    height: 20px;
-    width: 190px;
-    border-style:none;
-    margin-left: 15px;
-    height: 20px;
-}
-#oficina{
+#confEmail{
     border-radius: 5px ;
     height: 20px;
     width: 190px;
@@ -75,7 +59,7 @@ form .input-registro{
     margin-left: 15px;
     height: 20px;
 }
-#botonRegistrar{
+#botonLogin{
     background:none;
     border-radius: 20px;
     border: none;
@@ -84,8 +68,4 @@ form .input-registro{
     font-family: inherit;
     font-size: 20px;
     padding: 10px 20px;
-}
-.checkbox-container {
-    display: flex;
-    align-items: center;
 }
