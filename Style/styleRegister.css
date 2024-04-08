@@ -89,3 +89,33 @@ form .input-registro{
     display: flex;
     align-items: center;
 }
+
+#checkCliente{
+    margin-right: 10px;
+    margin-left: 5px;
+}
+#checkAgente{
+    margin-right: 10px;
+    margin-left: 5px;
+}
+#checkAdmin{
+    margin-right: 10px;
+    margin-left: 5px;
+}
+#errorConfContraseña{
+    background-color: rgb(248, 143, 143);
+    border-radius: 15px;
+    width: max-content;
+    height: max-content;
+}
+
+#paginaprincipal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(101% - 50px); /* Adjusted min-height instead of height */
+    background:   linear-gradient(#DEE0D5, #eeeed4);
+    padding: 20px;
+    box-sizing: border-box;
+}

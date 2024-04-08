@@ -1,0 +1,43 @@
+.contenedor {
+    max-width: 120em;
+    width: 90%;
+    padding: 1em;
+}
+
+.contenedor ul {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contenedor li {
+    padding: 1em;
+    margin: 0 1em 0 0;
+    list-style: none;
+    transition: all .5s ease;
+}
+
+.contenedor li.activo {
+    background-color: aqua;
+}
+
+.subcontenedor {
+    display: flex; 
+    justify-content: flex-start; 
+}
+
+.bloque {
+   
+    margin: 1em;
+    padding: 1em;
+    display: none;
+    transition: all .5s ease;
+    
+}
+
+.bloque.activo {
+    opacity: 1;
+    display: flex;
+}

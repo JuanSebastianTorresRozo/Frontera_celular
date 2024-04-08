@@ -58,6 +58,17 @@ form .input-registro{
     font-size: 15px;
     
 }
+#selectAgente{
+    border-radius: 5px ;
+    height: 20px;
+    width: 190px;
+    border-style:none;
+    margin-left: 15px;
+    height: 50px;
+    margin-top: 5px;
+    font-size: 15px;
+    
+}
 #Estado{
     border-radius: 5px ;
     width: 190px;
@@ -147,7 +158,17 @@ form .input-registro{
 #labelImagen:hover {
     background-color: #b87904; /* Cambiar color de fondo al pasar el ratón */
 }
-
+/* Main content area styles */
+#paginaprincipal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(101% - 50px); /* Adjusted min-height instead of height */
+    background:   linear-gradient(#DEE0D5, #eeeed4);
+    padding: 20px;
+    box-sizing: border-box;
+}
 
 
 

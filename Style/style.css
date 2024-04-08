@@ -51,17 +51,17 @@ header ul li a:hover {
     color: blue;
 }
 
-/* Main content area styles */
 #pagina_principal {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    min-height: calc(100% - 50px); /* Adjusted min-height instead of height */
-    background: #DEE0D5;
+    justify-content: flex-start; /* Ajustamos justify-content para alinear el contenido en la parte superior */
+    min-height: 100vh; /* Utilizamos 100vh para ocupar toda la altura de la ventana del navegador */
+    background: linear-gradient(#DEE0D5, #eeeed4);
     padding: 20px;
     box-sizing: border-box;
 }
+
 
 #menulateral {
     position: fixed;
@@ -104,4 +104,7 @@ header ul li a:hover {
 
 #sidebar ul li a:hover {
     color: #555;
+}
+#TiquetesPendientes{
+    display: none;
 }
